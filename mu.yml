@@ -3,6 +3,7 @@ environments:
 - name: production
 
 service:
-  port: 5000
+  port: 80
+  healthEndpoint: /
   pathPatterns:
   - /*
