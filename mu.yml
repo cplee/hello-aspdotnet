@@ -1,9 +1,13 @@
 environments:
 - name: acceptance
-- name: production
 
 service:
   port: 80
   healthEndpoint: /
   pathPatterns:
   - /*
+  pipeline:
+    build:
+      image: aws/codebuild/dot-net:core-2.0    
+    production:
+      disabled: true
