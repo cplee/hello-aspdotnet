@@ -4,7 +4,7 @@ phases:
   build:
     commands:
       - dotnet restore
-      - dotnet public -c Release 
+      - dotnet publish -c Release 
 
 artifacts:
   files:
